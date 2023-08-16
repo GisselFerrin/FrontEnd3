@@ -1,0 +1,42 @@
+.form {
+    height: 360px;
+    width: 340px;
+    border: 1px solid #d0d3d4;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+
+
+.container_input_form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+}
+
+
+.container_input_form label {
+    position: relative;
+    left: 8px;
+}
+
+
+.btn_save {
+    background: hsl(190, 95%, 30%);
+    width: 140px;
+    padding: 12px 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 auto;
+    transition: 300ms all ease;
+    border: none;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.btn_save:hover {
+    cursor: pointer;
+    background: hsl(190, 70%, 70%);
+}
