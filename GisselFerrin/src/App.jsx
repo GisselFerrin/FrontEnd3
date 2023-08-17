@@ -2,27 +2,27 @@
 import { useState } from 'react'
 import './App.css'
 import Form from './Componentes/Form'
-import Pedido from "./Componentes/Pedido";
+import Consulta from './Componentes/Consulta';
 
 function App() {
-  const [unPedido, setUnPedido] = useState();
+  const [unaConsulta, setUnaConsulta] = useState();
   
-  function handleSubmit(pedido){
+  function handleSubmit(Consulta){
     
-    setUnPedido(pedido)
+    setUnaConsulta(Consulta)
   }
   function handleDelete(){
-    setUnPedido()
+    setUnaConsulta()
   }
   
 
   return (
     <>
-  <Form pedidito={handleSubmit}/>
+  <Form consultita={handleSubmit}/>
     
-    {unPedido ? <Pedido onDelete={handleDelete}> 
-      {unPedido}
-    </Pedido>: undefined
+    {unaConsulta? <Consulta onDelete={handleDelete}> 
+      {unaConsulta}
+    </Consulta>: undefined
     } 
     
   </>
